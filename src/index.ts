@@ -36,7 +36,7 @@ export const createAgent = async () =>
   });
 const main = async () => {
   const agent = await createAgent();
-  console.log(agent.conversate("What can you do?"));
+  console.log(await agent.conversate("What can you do?"));
 };
 
 main();
