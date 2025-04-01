@@ -16,12 +16,12 @@ export const createAgent = async () =>
     },
     controllers: [
       {
-        name: "PetStore", // Name of the connector (can be any descriptive name)
+        name: "Shopping Mall", // Name of the connector (can be any descriptive name)
         protocol: "http", // Indicates an HTTP-based connector
         application: HttpLlm.application({
           // Convert the Swagger JSON document to an OpenAPI model for Agentica.
           document: OpenApi.convert(
-            await fetch("https://petstore.swagger.io/v2/swagger.json").then(
+            await fetch("https://shopping-be.wrtn.ai/editor/swagger.json").then(
               (r) => r.json() as any
             )
           ),
@@ -29,7 +29,10 @@ export const createAgent = async () =>
         }),
         connection: {
           // This is the actual API host where the API requests will be sent.
-          host: "https://petstore.swagger.io/v2",
+          host: "https://shopping-be.wrtn.ai",
+          headers: {
+            Authorization: "Bearer *****",
+          },
         },
       },
     ],
