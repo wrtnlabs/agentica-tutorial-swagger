@@ -14,9 +14,9 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@agentica/core": "^0.31.0",
+    "@agentica/core": "^0.31.1",
     "dotenv": "^16.4.7",
-    "openai": "^5.12.1",
-    "typia": "^9.7.0"
+    "openai": "^5.12.2",
+    "typia": "^9.7.1"
   }
 }
