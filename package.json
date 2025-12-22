@@ -16,7 +16,7 @@
   "dependencies": {
     "@agentica/core": "^0.34.2",
     "dotenv": "^16.4.7",
-    "openai": "^6.14.0",
+    "openai": "^6.15.0",
     "typia": "^10.1.0"
   }
 }
